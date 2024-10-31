@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Gejala</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+    <h1>Masukkan Gejala Anda</h1>
+    <div class="card">
+    <form method="post">
+        {% for symptom, question in pertanyaan.items() %}
+            <label for="{{ symptom }}">{{ question }}</label>
+            <input type="checkbox" id="{{ symptom }}" name="gejala" value="{{ symptom }}">
+            <br>
+        {% endfor %}
+        <button type="submit">Selanjutnya</button>
+    </form>
+    </div>
+    </div>
+</body>
+</html>

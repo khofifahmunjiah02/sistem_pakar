@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+    <h1>Pertanyaan yang sering ditanyakan</h1>
+    <div class="card">
+    <h2>Bagaimana cara mengatasi gangguan kecemasan?</h2>
+    <p> Membatasi diri dalam penggunaan smartphone menggunakan Digital Wellbeing agar dapat membantu 
+        dalam membatasi penggunaan aplikasi smartphone dalam batas yang wajar, dan mengisi waktu luang 
+        dengan hal yang bermanfaat lainnya agar tidak berketergantungan dengan smartphone.</p>
+    <h2>Bagaimana cara mengatasi gangguan insomnia?</h2>
+    <p> Selalu hindari penggunaan smartphone satu jam sebelum tidur agar tidak mengakibatkan rasa kantuk 
+        yang hilang dan juga dapat memanfaatkan aplikasi Bedtime Mode pada smartphone agar dapat memberikan 
+        notifikasi batas penggunaan smartphone sebelum beristirahat.</p>
+    <h2>Apa saja gejala pada myopia?</h2>
+    <p> Ditandai dengan rasa pusing disaat melihat sebuah objek pada jarak jauh, pandangan menjadi kabur yang 
+        akan menjadi berangsur-angsur menjadi cukup parah dengan seiringnya waktu, dan akan mengalami kesulitan 
+        dalam melihat di kondisi malam hari. </p>
+    <h2>Apa itu Repetitive Strain Injury (RSI)?</h2>
+    <p> Gangguan atau keluhan yang terjadi pada jaringan lunak tubuh seperti otot, saraf serta jaringan penunjang 
+        lainnya, yang diakibatkan karena pemakaian berulang (gerakan berulang)</p>
+    <h2>Skoliosis ditandai dengan?</h2>
+    <p>Nyeri pada bagian punggung dan bahu yang menyebabkan postur tubuh menjadi bungkuk dan tidak ideal dan dengan
+       seiringnya waktu akan merubah postur tubuh secara permanen dan juga kemungkinan akan mengakibatkan kesulitan 
+       untuk bernafas</p>
+    
+    <a href="{{ url_for('index') }}"class="btn">Kembali ke Beranda</a>
+    </div>
+    </div>
+</body>
+</html>

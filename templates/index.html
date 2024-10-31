@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Pakar Identifikasi Dampak Penggunaan Teknologi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Selamat datang di Sistem Pakar Identifikasi Dampak Penggunaan Teknologi</h1>
+    </header>
+    <nav>
+        <a href="{{ url_for('index') }}">Beranda</a>
+        <a href="{{ url_for('about') }}">Tentang Kami</a>
+        <a href="{{ url_for('contact') }}">Kontak</a>
+        <a href="{{ url_for('faq') }}">FAQ</a>
+        <a href="{{ url_for('services') }}">Informasi</a>
+    </nav>
+    <div class="container">
+        
+        <h4>Selamat datang di Sistem Pakar Identifikasi Dampak Penggunaan Teknologi</h4>
+        <a href="{{ url_for('input_nama') }}" class="btn">Mulai</a>
+    </div>
+</body>
+</html>
